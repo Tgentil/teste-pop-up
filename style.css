@@ -1,0 +1,195 @@
+/* Definições gerais */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Barra de navegação */
+.navbar {
+	background-color: #160040;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+.menu a:hover {
+	background-color: #160096;
+}
+
+/* Conteúdo principal */
+h1 {
+	font-size: 32px;
+	margin: 40px 0;
+}
+
+h2 {
+	font-size: 24px;
+	margin: 30px 0 10px;
+}
+
+p {
+	margin: 10px 0;
+}
+
+ul {
+	margin: 10px 0;
+	padding-left: 20px;
+}
+
+/* Estilos para as seções Home e Sobre */
+.center-content {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.center-content h2 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.center-content p {
+	font-size: 18px;
+	color: #666;
+	line-height: 1.5;
+}
+
+/* Rodapé */
+.footer {
+	background-color: #003dff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	color: white;
+	margin-top: auto;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.contact-container {
+	text-align: left;
+}
+
+.contact-info,
+.contact-list {
+	margin: 10px 0;
+}
+
+/* .copyright <| end of text|> */
+
+/* Popup */
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	max-width: 800px;
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	z-index: 9999;
+}
+
+.popup h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.popup-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #999;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.popup-sidebar {
+	float: left;
+	width: 25%;
+	margin-right: 30px;
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+}
+
+.sidebar-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-menu li {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.sidebar-menu li a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+.sidebar-menu li a:hover {
+	color: #003dff;
+}
+.popup-content {
+	overflow: hidden;
+}
+
+.popup-section {
+	margin-bottom: 30px;
+}
+
+.popup-section h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.popup-section img {
+	max-width: 100%;
+	height: auto;
+	width: 80%;
+}
+
+.popup-section:not(:last-child) {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+.popup-section {
+	background-color: #f7f7f7;
+	padding: 20px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>teste pop-up</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="navbar">
+			<nav class="menu">
+				<a href="#home">Home</a>
+				<a href="#sobre">Sobre</a>
+				<a href="#contato">Contato</a>
+				<a href="#" id="teste-link">Teste</a>
+			</nav>
+		</header>
+
+		<div id="home" class="center-content">
+			<h2>Home</h2>
+			<p>Bem-vindo ao meu site de teste de pop-up.</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae
+				justo velit. Nullam lobortis purus sed nibh ullamcorper commodo. Sed nec
+				cursus tortor. Vivamus facilisis ligula vel velit suscipit ultricies.
+				Fusce vel justo in ex luctus consequat. Curabitur et nunc nec sem placerat
+				mollis nec id tortor. Integer hendrerit ipsum quis lectus hendrerit, in
+				pellentesque metus pharetra. Sed ullamcorper justo sed velit bibendum, nec
+				elementum odio sodales. Proin auctor sem in fermentum sagittis. Mauris ac
+				nisl in ligula dictum sollicitudin ut vel lectus. Nulla nec placerat
+				ligula.
+			</p>
+		</div>
+
+		<div id="sobre" class="center-content">
+			<h2>Sobre</h2>
+			<p>Algumas informações sobre mim e sobre o site.</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi gravida
+				tristique turpis nec consectetur. In feugiat semper leo, nec fringilla
+				lectus ultricies id. Maecenas ac nunc felis. Donec ut arcu nec mauris
+				euismod elementum. Integer a aliquet felis. Curabitur lobortis tristique
+				ipsum, ac consectetur neque lacinia a. Ut et risus vitae ligula blandit
+				fermentum. Aliquam erat volutpat. Nullam lacinia dolor vel tellus
+				consectetur, at accumsan velit cursus. Quisque dapibus nunc in malesuada
+				convallis. Mauris eleifend, dui ac vestibulum dapibus, neque erat auctor
+				ex, vitae consectetur dolor nunc sed mauris. Donec cursus consectetur
+				justo eu faucibus. Mauris facilisis lectus et est eleifend, a aliquam
+				mauris finibus. Donec in eros in lectus elementum gravida eu id elit.
+			</p>
+		</div>
+
+		<footer class="footer">
+			<div class="contact-container">
+				<h2 id="contato">Contato</h2>
+				<p class="contact-info">
+					Você pode entrar em contato comigo pelos seguintes meios:
+				</p>
+				<ul class="contact-list">
+					<li>Email: contato@example.com</li>
+					<li>Telefone: (XX) XXXX-XXXX</li>
+				</ul>
+			</div>
+		</footer>
+		<div id="popup" class="popup">
+			<span class="popup-close" onclick="closePopup()">&times;</span>
+			<div class="popup-sidebar">
+				<ul class="sidebar-menu">
+					<li>
+						<a href="#" onclick="showSection('popup-title')"
+							>Tutorial do Site</a
+						>
+					</li>
+					<li>
+						<a href="#" onclick="showSection('teste01')">Teste 01</a>
+					</li>
+					<li>
+						<a href="#" onclick="showSection('teste02')">Teste 02</a>
+					</li>
+					<li>
+						<a href="#" onclick="showSection('teste03')">Teste 03</a>
+					</li>
+				</ul>
+			</div>
+			<div class="popup-content">
+				<h2 id="popup-title" class="popup-section initial-section">
+					Tutorial do Site
+				</h2>
+				<div id="title-text" class="popup-section initial-section">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+						lacinia arcu nunc, eu ultrices ipsum blandit ac. Quisque ac orci
+						ac tortor eleifend fermentum in id neque. Integer congue sem id
+						justo faucibus eleifend. Fusce at turpis ac arcu lobortis eleifend
+						in vel enim. In rhoncus gravida velit nec feugiat. Nam lacinia
+						luctus justo, at faucibus mi imperdiet nec. Aliquam consequat
+						velit tortor, id tincidunt velit suscipit ac. Maecenas in mi eu
+						ipsum feugiat posuere at vitae est. Proin interdum interdum nunc a
+						aliquam. Curabitur pharetra fringilla felis at vestibulum. Cras eu
+						nunc ac tortor luctus facilisis sed sit amet mauris. Proin
+						tincidunt mi sed dui auctor fringilla. Proin luctus nisl vel ipsum
+						cursus tincidunt. Mauris nec nisi sit amet dolor efficitur
+						dignissim.
+					</p>
+				</div>
+				<div id="teste01" class="popup-section hidden">
+					<img src="./assets/1.png" alt="Teste 01" />
+				</div>
+				<div id="teste02" class="popup-section hidden">
+					<img src="./assets/2.jpg" alt="Teste 02" />
+				</div>
+				<div id="teste03" class="popup-section hidden">
+					<img src="./assets/3.jpg" alt="Teste 03" />
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
