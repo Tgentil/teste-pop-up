@@ -43,12 +43,9 @@ function showSection(sectionId) {
 
 // Espera o carregamento completo da página
 window.addEventListener("DOMContentLoaded", function () {
-	// Obtém a referência para o elemento de popup
 	var popup = document.getElementById("popup");
 
-	// Verifica se o elemento existe
 	if (popup) {
-		// Oculta o popup ao carregar a página
 		popup.style.display = "none";
 	}
 
@@ -60,13 +57,10 @@ window.addEventListener("DOMContentLoaded", function () {
 			document.getElementById("title-text").style.display = "block";
 		}
 	}
-
-	// Obtém a referência para o link "Teste" na barra de navegação
+	
 	var testeLink = document.getElementById("teste-link");
 
-	// Verifica se o link existe
 	if (testeLink) {
-		// Adiciona um evento de clique para abrir o popup ao clicar no link "Teste"
 		testeLink.addEventListener("click", function (event) {
 			event.preventDefault();
 			openPopup();
