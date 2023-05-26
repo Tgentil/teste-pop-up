@@ -1,5 +1,7 @@
 # Site de Teste de Pop-ups
 
+ [![GitHub](https://img.shields.io/badge/Visit-My%20Profile-0891B2?style=flat-square&logo=github)](https://github.com/Tgentil)
+
 Este site foi criado com o objetivo de testar a funcionalidade de pop-ups. Ele foi desenvolvido utilizando apenas HTML, CSS e JavaScript Vanilla, sem a importação de qualquer biblioteca externa.
 
 
